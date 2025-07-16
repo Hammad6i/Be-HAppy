@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For Someone Special</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Music -->
+
+
+  <!-- Page 1 -->
+  <div class="container">
+    <h1 class="title">Hey You 💫</h1>
+    <p class="subtitle">I made something special for you...</p>
+    <button onclick="startStory()">💖 Tap to Begin 💖</button>
+  </div>
+
+  <!-- Page 2 -->
+  <div class="page2 hidden" id="messagePage">
+    <div class="typewriter" id="typeText"></div>
+  </div>
+
+  <!-- Page 3 -->
+  <div class="page3 hidden" id="finalPage">
+    <h2 class="glow">You're my favorite feelings ever 💞</h2>
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+<audio id="bg-music" loop>
+  <source src="romantic.mp3" type="audio/mpeg">
+</audio>
+<button onclick="document.getElementById('bg-music').play()">🎵 Turn On Music</button>

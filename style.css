@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f0c29; /* backup */
+  background: linear-gradient(-45deg, #1f003b, #55006e, #ff0077, #ff0055);
+  background-size: 400% 400%;
+  animation: bgMove 10s ease infinite;
+  color: white;
+  overflow: hidden;
+  height: 100vh;
+}
+
+@keyframes bgMove {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+.container, .page2, .page3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 3em;
+  color: #ff80bf;
+  text-shadow: 0 0 20px #ff00c8;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #ffccff;
+}
+
+button {
+  background: #ff0077;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.1em;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #ff33aa, 0 0 20px #ff33aa;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background: #ff3399;
+}
+
+.typewriter {
+  font-size: 1.8em;
+  width: 80%;
+  white-space: pre-wrap;
+  border-right: 2px solid #fff;
+  overflow: hidden;
+  animation: blink 0.7s infinite step-end;
+  color: #fff0ff;
+  text-shadow: 0 0 5px #ff99cc;
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.glow {
+  font-size: 2em;
+  color: #fff;
+  text-shadow: 
+    0 0 5px #ff66cc, 
+    0 0 10px #ff66cc, 
+    0 0 15px #ff0099, 
+    0 0 20px #ff0099;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px #ff66cc; }
+  to { text-shadow: 0 0 20px #ff0099; }
+}
+
+.hidden {
+  display: none;
+}
